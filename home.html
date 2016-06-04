@@ -5,13 +5,14 @@
 	  <title> TJ Computer Science </title>
 
 	   	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	   	<link rel="stylesheet" href="css/animate.min.css" type="text/css">
+	   	
 	  	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	  	
   		
 	</head>
 	<body>
 	<nav class ="white">
+
 		<div class ="navbar-wrapper container">
 			<a href ="https://tjhsst.edu/" class = "brand-logo">TJCS</a>
 			<ul class = "right">
@@ -45,7 +46,7 @@
         			  <h5 class="header col s12 light black-text">TJ computer science information all in one place</h5>
         			</div>
         			<div class="row center">
-        	 		 <a href="" id="download-button" 	class="btn-large waves-effect waves-light black lighten-1">Get Started</a>
+        	 		 <a href="#submit" id="download-button" 	class="btn-large waves-effect waves-light black lighten-1 page-scroll">Submit Entry</a>
         			</div>
        				 <br><br>
 
@@ -203,7 +204,40 @@
         </tbody>
       </table>
       </div>
-      <script src="js/jquery.js"></script>
+      <div id="submit" class = container>
+      	<h1 class = "header center black-text text-lighten-2">Submit Entry</h1>
+      	<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+ 
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+     	 </div>
+    	</form>
+    	<label>Browser Select</label>
+ 		 <select class="browser-default">
+  		  <option value="" disabled selected>Type</option>
+  		  <option value="1">Opportunities</option>
+  		  <option value="2">Events</option>
+  		  <option value="3">Projects</option>
+  		  <option value="4">Contests</option>
+  		</select>
+  		</div>
+	</div>
+	
+     
 
       	<!-- Materialize -->
       	<script src="js/jquery.js"></script>	
